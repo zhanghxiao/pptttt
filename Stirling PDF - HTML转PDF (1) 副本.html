@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>苍穹外卖项目介绍</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans SC', sans-serif;
+            background: #f0f0f0;
+        }
+        .slide {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            background: #fff;
+            color: #333;
+            padding: 40px;
+            box-sizing: border-box;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .slide-content {
+            max-width: 1200px;
+            width: 100%;
+            z-index: 2;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #3498db;
+            font-size: 2.5em;
+            margin-top: 0;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.8em;
+            color: #7f8c8d;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .bubble {
+            background-color: #ecf0f1;
+            border-radius: 20px;
+            padding: 15px;
+            margin: 10px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 30px;
+        }
+        .feature-box {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .feature-box h3 {
+            color: #e74c3c;
+            margin-top: 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100px;
+            height: auto;
+        }
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+        .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.image-container h3 {
+    margin-bottom: 10px;
+    color: #3498db;
+}
+    </style>
+</head>
+<body>
+
+<div class="slide" style="background-color: #ffffff;">
+    <img src="path_to_your_logo.png" alt="项目Logo" class="logo">
+    <div class="slide-content" style="text-align: center;">
+        <h1 style="font-family: 'Arial Black', sans-serif; background: linear-gradient(45deg, #3498db, #2c3e50); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">苍穹外卖项目介绍</h1>
+        <p class="subtitle">PROJECT COOPERATION PLAN</p>
+        <img src="assets/image-20221106185252326.png" alt="项目概览" style="max-width: 60%; margin-top: 40px;">
+        <p style="margin-top: 50px; font-size: 1.2em;">汇报人：某某 日期：20XX.X.X</p>
+    </div>
+</div>
+
+<div class="slide">
+    <div class="slide-content">
+        <h2>目录 CONTENTS</h2>
+        <div class="grid" style="margin-top: 50px;">
+            <div class="feature-box">
+                <h3>1. 项目概述</h3>
+                <p>了解苍穹外卖项目的基本情况和目标</p>
+            </div>
+            <div class="feature-box">
+                <h3>2. 系统架构</h3>
+                <p>探索项目的技术架构和实现方案</p>
+            </div>
+            <div class="feature-box">
+                <h3>3. 功能模块</h3>
+                <p>详细介绍各个核心功能模块</p>
+            </div>
+            <div class="feature-box">
+                <h3>4. 技术亮点</h3>
+                <p>展示项目中使用的创新技术和解决方案</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slide">
+    <div class="slide-content">
+        <h2>项目概述</h2>
+        <div class="grid">
+            <div>
+                <div class="bubble">
+                    <p>苍穹外卖是一款专为餐饮企业定制的软件产品，旨在提供全面的餐厅管理和在线点餐解决方案。</p>
+                </div>
+                <ul>
+                    <li>系统管理后台：用于餐厅内部员工管理</li>
+                    <li>小程序端应用：面向消费者的在线点餐平台</li>
+                    <li>实现从订单管理到配送的全流程数字化</li>
+                </ul>
+            </div>
+            <img src="assets/image-20221106185252326.png" alt="项目概述">
+        </div>
+    </div>
+</div>
+
+<div class="slide">
+    <div class="slide-content">
+        <h2>系统架构</h2>
+        <img src="assets/image-20221106185646994.png" alt="系统架构图" style="max-width: 80%; margin: 0 auto; display: block;">
+        <div class="bubble" style="margin-top: 30px;">
+            <p>采用前后端分离架构，后端使用Spring Boot框架，前端采用Vue.js，确保系统的高性能和可扩展性。</p>
+        </div>
+    </div>
+</div>
+
+<div class="slide">
+    <div class="slide-content">
+        <h2>功能模块</h2>
+        <div class="grid">
+            <div class="feature-box">
+                <h3>员工管理</h3>
+                <p>实现员工信息的CRUD操作，包括登录、权限控制等功能。</p>
+                <img src="assets/image-20230423165347190.png" alt="员工管理" style="max-width: 100%;">
+            </div>
+            <div class="feature-box">
+                <h3>分类管理</h3>
+                <p>对菜品和套餐分类进行管理，支持添加、修改和删除操作。</p>
+                <img src="assets/image-20230424163713863.png" alt="分类管理" style="max-width: 100%;">
+            </div>
+            <div class="feature-box">
+                <h3>菜品管理</h3>
+                <p>包括菜品的添加、修改、删除和状态管理，支持多规格和口味设置。</p>
+                <img src="assets/image-20230413232517972-16825002454411.png" alt="菜品管理" style="max-width: 100%;">
+            </div>
+            <div class="feature-box">
+                <h3>套餐管理</h3>
+                <p>实现套餐的组合、定价和上下架管理，提高餐厅运营效率。</p>
+                <img src="assets/image-20230210143123449.png" alt="套餐管理" style="max-width: 100%;">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slide">
+    <div class="slide-content">
+        <h2>套餐管理流程 (1/2)</h2>
+        <div class="grid">
+            <div class="image-container">
+                <h3>新增套餐</h3>
+                <img src="assets/新增套餐流程图3.png" alt="新增套餐流程图" style="width: 55%;">
+            </div>
+            <div class="image-container">
+                <h3>修改套餐</h3>
+                <img src="assets/修改套餐3.png" alt="修改套餐流程图" style="width: 70%;">
+            </div>
+        </div>
+        <div class="bubble" style="margin-top: 20px;">
+            <p>套餐管理流程的前半部分展示了新增套餐和修改套餐的关键步骤，使餐厅能够灵活地创建和更新其套餐选项。</p>
+        </div>
+    </div>
+</div>
+
+<div class="slide">
+    <div class="slide-content">
+        <h2>套餐管理流程 (2/2)</h2>
+        <div class="grid">
+            <div class="image-container">
+                <h3>删除套餐</h3>
+                <img src="assets/套餐删除3.png" alt="删除套餐流程图" style="width: 70%;">
+            </div>
+            <div class="image-container">
+                <h3>启售/停售套餐</h3>
+                <img src="assets/启售停售3.png" alt="启售停售套餐流程图" style="width: 70%;">
+            </div>
+        </div>
+        <div class="bubble" style="margin-top: 20px;">
+            <p>套餐管理流程的后半部分涵盖了删除套餐和启售/停售套餐的操作，确保餐厅能够有效地管理其菜单和销售策略。</p>
+        </div>
+    </div>
+</div>
+<div class="slide">
+    <div class="slide-content">
+        <h2>技术亮点</h2>
+        <div class="grid">
+            <div class="feature-box">
+                <h3>Spring Boot快速开发</h3>
+                <p>利用Spring Boot框架，实现快速开发和部署。</p>
+            </div>
+            <div class="feature-box">
+                <h3>MyBatis ORM映射</h3>
+                <p>使用MyBatis简化数据库操作，提高开发效率。</p>
+            </div>
+            <div class="feature-box">
+                <h3>Redis缓存集成</h3>
+                <p>通过Redis缓存提升系统性能和响应速度。</p>
+            </div>
+            <div class="feature-box">
+                <h3>阿里云OSS文件存储</h3>
+                <p>采用阿里云OSS实现高效、安全的文件存储服务。</p>
+            </div>
+        </div>
+        <div class="bubble" style="margin-top: 20px;">
+            <p>这些技术的选择和应用大大提高了项目的开发效率、系统性能和用户体验。</p>
+        </div>
+    </div>
+</div>
+
+<div class="slide" style="background: #ffffff">
+    <div class="slide-content" style="text-align: center; color: #ffffff;">
+        <h1 style="font-size: 4em; margin-top: 200px;">谢谢观看！</h1>
+        <h1 style="font-size: 1.5em; margin-top: 50px;">THANK YOU FOR YOUR ATTENTION</p>
+    </div>
+</div>
+
+
+</body>
+</html>
